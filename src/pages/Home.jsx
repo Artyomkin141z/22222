@@ -12,14 +12,14 @@ class Home extends Logics {
             searchField: "",
             categories: "All",
             sortingBy: "relevance",
-            startIndex: 0,
+            loadItems: 0,
             countResult: 0,
         }
     }
 
     render(){
-        console.log('book.state.books' , this.state.books);
-        console.log('book.state.searchField' , this.state.searchField);
+        // console.log('book.state.books' , this.state.books);
+        // console.log('book.state.searchField' , this.state.searchField);
 
         return(
         <>
@@ -28,11 +28,12 @@ class Home extends Logics {
                 handleSearch = {this.handleSearch}
                 handleCategories = {this.handleCategories}
                 handleSorting = {this.handleSortingBy}
-                getBookRequest = {this.getBookRequest}
+                getBookRequest = {this.getBookNewRequest}
             />
             <BookList 
                 countResult = {this.state.countResult}
                 books = {this.state.books}
+                getBookRequest = {this.getBookRequest}
             />
         </>
         )

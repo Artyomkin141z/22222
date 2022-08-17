@@ -7,9 +7,40 @@
 
 .bookList{
     margin: 0 auto;
-    padding: 30px 10px;
+    padding: 30px 10px 0px 10px;
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
     justify-content: space-around;
+}
+
+.bookList-uploaded{
+    text-align: center;
+    color: #c0c0c0;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.bookList-loadMore{
+    font-weight: 700;
+    font-size: 20px;   
+    cursor: pointer;
+    transition: 0.5s;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.wrapper-load{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bookList-loadMore:hover{
+    transform: scale(1.2);
+    color: #c0c0c0;
+}
+
+.bookList-loadMore:active{
+    color:#1dd226;
 }

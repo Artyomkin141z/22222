@@ -12,11 +12,29 @@ const bookList = (props) => {
         return imgUrl;
     }
 
-    function showCountResult(countResult = 0){
+    function showCountResult(countResult){
         return(
             <p className="count-reult">
                 Found {countResult} result
             </p>
+        );
+    }
+
+    function loadMoreBooks(){
+        return(
+            <div >
+                <p className="bookList-uploaded">
+                    Uploaded {" " + props.books.length}
+                </p>
+                <div className="wrapper-load">
+                    <p
+                        className="bookList-loadMore"
+                        onClick={props.getBookRequest}
+                    >
+                        Load more
+                    </p>
+                </div>
+            </div>
         );
     }
 
@@ -38,6 +56,7 @@ const bookList = (props) => {
                 })
             }
         </div>
+        {loadMoreBooks()}
     </>
     );
 }
