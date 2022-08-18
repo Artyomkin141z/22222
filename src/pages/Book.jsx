@@ -2,12 +2,12 @@ import { render } from "@testing-library/react";
 import { Component } from "react";
 import Header from "../components/head/head";
 
-class Book extends Component {
-    render(){
+const Book = () => {
         return(
-            <Header />
-        ); 
-    };  
+            <div>
+                Book
+            </div>
+        );  
 }
 
 export default Book;

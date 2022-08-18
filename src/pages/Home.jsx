@@ -2,6 +2,9 @@ import Header from "../components/head/head";
 import Search from "../components/search-form/search-form";
 import BookList from "../components/bookList/bookList";
 
+import{ Routes, Route, Link } from 'react-router-dom';
+import Book from "./Book";
+
 import Logics from '../utils/logics'
 
 class Home extends Logics {
@@ -31,14 +34,17 @@ class Home extends Logics {
                 handleSorting = {this.handleSortingBy}
                 getBookRequest = {this.getBookNewRequest}
             />
-            
-            <BookList 
-                isLoaded = {this.state.isLoaded}
-                countResult = {this.state.countResult}
-                books = {this.state.books}
-                getBookRequest = {this.getBookRequest}
-            />
-            
+            <Routes>
+                <Route path='/' element={
+                    <BookList 
+                        isLoaded = {this.state.isLoaded}
+                        countResult = {this.state.countResult}
+                        books = {this.state.books}
+                        getBookRequest = {this.getBookRequest}
+                    />
+                }/>
+                <Route path='/book' element={<Book />} />
+            </Routes> 
         </>
         )
     }

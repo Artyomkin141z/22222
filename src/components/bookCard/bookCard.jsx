@@ -17,7 +17,7 @@ const BookCard = (props) => {
 
     return(
         <>
-            <Link to='/pages/Book'>
+            <Link to='/book'>
                 <div className='card'>
                     <img
                         className='card-img'
