@@ -1,5 +1,8 @@
 import './bookCard.css';
 
+import{ Link } from 'react-router-dom';
+
+
 const BookCard = (props) => {
     function checkLength (str){
         str = String(str);
@@ -13,18 +16,22 @@ const BookCard = (props) => {
     }
 
     return(
-        <div className='card'>
-            <img
-                className='card-img'
-                src={props.img} 
-                alt = "Book cover"
-            />
-            <div className='card-inform'>
-                <p className='card-category'>{props.category}</p>
-                <p className='card-title'>{checkLength(props.title)}</p>
-                <p className='card-autors'>{props.autors}</p>
-            </div>
-        </div>
+        <>
+            <Link to='/pages/Book'>
+                <div className='card'>
+                    <img
+                        className='card-img'
+                        src={props.img} 
+                        alt = "Book cover"
+                    />
+                    <div className='card-inform'>
+                        <p className='card-category'>{props.category}</p>
+                        <p className='card-title'>{checkLength(props.title)}</p>
+                        <p className='card-autors'>{props.autors}</p>
+                    </div>
+                </div>
+            </Link>
+        </>
     );
 }
 

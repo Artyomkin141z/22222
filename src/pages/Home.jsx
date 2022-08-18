@@ -14,6 +14,7 @@ class Home extends Logics {
             sortingBy: "relevance",
             loadItems: 0,
             countResult: 0,
+            isLoaded: false,
         }
     }
 
@@ -30,11 +31,14 @@ class Home extends Logics {
                 handleSorting = {this.handleSortingBy}
                 getBookRequest = {this.getBookNewRequest}
             />
+            
             <BookList 
+                isLoaded = {this.state.isLoaded}
                 countResult = {this.state.countResult}
                 books = {this.state.books}
                 getBookRequest = {this.getBookRequest}
             />
+            
         </>
         )
     }

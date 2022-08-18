@@ -44,7 +44,7 @@ class Logics extends Component {
             })
             .then((data) => {
                 // console.log('data: ', data);
-                
+                this.setState({isLoaded: true});
                 this.setState({loadItems: this.state.loadItems + 30});
                 this.setState({books: [...data.body.items]});
                 this.setState({countResult: data.body.totalItems});

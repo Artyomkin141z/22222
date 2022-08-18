@@ -9,3 +9,9 @@
 body {
   background-color: #FAFAFA;
 }
+
+a{
+  outline: none;
+  text-decoration: none;
+  color: black;
+}

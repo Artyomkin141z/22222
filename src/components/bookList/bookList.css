@@ -19,6 +19,7 @@
     color: #c0c0c0;
     font-weight: 300;
     margin-bottom: 20px;
+    margin-right: 0;
 }
 
 .bookList-loadMore{
@@ -43,4 +44,8 @@
 
 .bookList-loadMore:active{
     color:#1dd226;
+}
+
+.bookList-End:active{
+    color: #bb1c1c;
 }
