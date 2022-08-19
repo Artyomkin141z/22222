@@ -2,7 +2,7 @@ import Header from "../components/head/head";
 import Search from "../components/search-form/search-form";
 import BookList from "../components/bookList/bookList";
 
-import{ Routes, Route, Link } from 'react-router-dom';
+import{ Routes, Route} from 'react-router-dom';
 import Book from "./Book";
 
 import Logics from '../utils/logics'
@@ -22,7 +22,7 @@ class Home extends Logics {
     }
 
     render(){
-        // console.log('book.state.books' , this.state.books);
+        console.log('book.state.books' , this.state.books);
         // console.log('book.state.searchField' , this.state.searchField);
 
         return(

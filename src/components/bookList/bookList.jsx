@@ -82,6 +82,7 @@ const bookList = (props) => {
                             category = {book.volumeInfo.categories}
                             autors = {book.volumeInfo.authors}
                             description = {book.volumeInfo.description}
+                            id = {book.id}
                         />
                     );
                 })
