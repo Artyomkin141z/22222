@@ -47,7 +47,7 @@ button:active{
     justify-content: space-around;
 }
 
-p{
+.sortContainer p{
     margin-right: 10px;
     
 }

@@ -1,5 +1,7 @@
 import { Component } from "react";
+import { Link } from 'react-router-dom';
 import request from "superagent";
+import {useHref, useLinkClickHandler} from "react-router-dom";
 
 class Logics extends Component {
     handleSearch = (e) => {
@@ -56,7 +58,7 @@ class Logics extends Component {
 
     getBookRequest = (e) => {
         e.preventDefault();
-
+        
         request
             .get("https://www.googleapis.com/books/v1/volumes")
             .query(
