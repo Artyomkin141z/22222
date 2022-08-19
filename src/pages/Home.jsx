@@ -27,13 +27,15 @@ class Home extends Logics {
 
         return(
         <>
-            <Header />
-            <Search 
-                handleSearch = {this.handleSearch}
-                handleCategories = {this.handleCategories}
-                handleSorting = {this.handleSortingBy}
-                getBookRequest = {this.getBookNewRequest}
-            />
+            <div className="gradient">
+                <Header></Header>
+                <Search 
+                    handleSearch = {this.handleSearch}
+                    handleCategories = {this.handleCategories}
+                    handleSorting = {this.handleSortingBy}
+                    getBookRequest = {this.getBookNewRequest}
+                />
+            </div>
             <Routes>
                 <Route path='/' element={
                     <BookList 

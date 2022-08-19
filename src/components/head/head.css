@@ -1,8 +1,9 @@
 .container{
     font-weight: 900;
     font-size: 30px;
-    color: #fafafa;
+    color: #ffffff;
     padding: 20px;
     text-align: center;
-    background-color: #b4b4b4;
+    /* background-color: #b8abab; */
+    text-shadow: 0 0 5px #929292;
 }

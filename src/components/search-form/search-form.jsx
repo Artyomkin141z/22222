@@ -4,14 +4,16 @@ function Search (props) {
     return(
         <form className='from-container'>
             <div className='inputContainer'>
-                <input
-                    className=''
-                    maxLength="100" type="text"
-                    onChange={props.handleSearch}
-                ></input>
-                <button
-                    onClick={props.getBookRequest}
-                ></button>
+                <div className='inputContainer-child'>
+                    <input
+                        className=''
+                        maxLength="100" type="text"
+                        onChange={props.handleSearch}
+                    ></input>
+                    <button
+                        onClick={props.getBookRequest}
+                    ></button>
+                </div>
             </div>
             <div className='filterContainer'>
                 <div className='sortContainer'>

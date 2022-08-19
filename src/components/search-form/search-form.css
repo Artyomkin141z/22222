@@ -1,5 +1,5 @@
 .from-container{
-    background-color: #b4b4b4;
+    /* background-color: #b8abab; */
     padding-bottom: 20px;
 }
 
@@ -7,15 +7,27 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    
+}
+
+.inputContainer-child{
+    display: flex;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px #999999;
 }
 
 input{
-    width: 90%;
+    width: 100%;
     max-width: 600px;
     height: 30px;
     border-radius: 15px 0 0 15px;
     padding: 0 10px;
     border: 0px solid #000000;
+    
+    /* box-shadow: 0 0 20px ; */
 }
 
 button{
@@ -45,6 +57,7 @@ button:active{
     max-width: 500px;
     margin: 0 auto;
     justify-content: space-around;
+    color: #ffffff;
 }
 
 .sortContainer p{
