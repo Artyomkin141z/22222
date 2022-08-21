@@ -7,8 +7,9 @@ const bookList = (props) => {
     let imgUrl = "";
 
     function checkImg(book){
-        if(book.volumeInfo.imageLinks === undefined){       
-            imgUrl = "../public/image/noImage.png";
+        if(book.volumeInfo.imageLinks === undefined){ 
+            console.log('no image');      
+            imgUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm81P7TSBIArdAfY2iNZysOqa5FDoCqxG-IQ&usqp=CAU";
         }
         else imgUrl = book.volumeInfo.imageLinks.thumbnail;
         return imgUrl;

@@ -21,7 +21,7 @@ const BookCard = (props) => {
                 <div className='card'>
                     <img
                         className='card-img'
-                        src={props.img} 
+                        src={props.img}
                         alt = "Book cover"
                     />
                     <div className='card-inform'>

@@ -1,8 +1,18 @@
 import './search-form.css';
 
+import { Link } from 'react-router-dom';
+
 function Search (props) {
+    const changeLocation = (e) => {
+        props.getBookRequest(e);
+        e.preventDefault();
+        return <Link to='/' />;
+    }
+
     return(
-        <form className='from-container'>
+        <form className='from-container'
+            onSubmit={changeLocation}
+        >
             <div className='inputContainer'>
                 <div className='inputContainer-child'>
                     <input
@@ -11,7 +21,7 @@ function Search (props) {
                         onChange={props.handleSearch}
                     ></input>
                     <button
-                        onClick={props.getBookRequest}
+                        onClick={changeLocation}
                     ></button>
                 </div>
             </div>

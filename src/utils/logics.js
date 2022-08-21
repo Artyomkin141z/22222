@@ -1,7 +1,5 @@
 import { Component } from "react";
-import { Link } from 'react-router-dom';
 import request from "superagent";
-import {useHref, useLinkClickHandler} from "react-router-dom";
 
 class Logics extends Component {
     handleSearch = (e) => {
@@ -33,7 +31,7 @@ class Logics extends Component {
 
     getBookNewRequest = (e) => {
         e.preventDefault();
-
+        
         // console.log(this.state.searchField + this.getCategories(this.state.categories) + this.state.sortingBy + this.state.startIndex);
 
         request
