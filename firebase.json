@@ -4,7 +4,6 @@
     ".write": false
   },
   "hosting": {
-    "site": "gilya-book-search",
     "public": "build",
     "ignore": [
       "firebase.json",
