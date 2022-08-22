@@ -1,8 +1,6 @@
 import BookCard from "../bookCard/bookCard";
 import './bookList.css';
 
-import LoadIndicator from "../LoadIndicator/loadIndicator";
-
 const bookList = (props) => {
     let imgUrl = "";
 
@@ -71,13 +69,13 @@ const bookList = (props) => {
 
     return (
     <>
-    <LoadIndicator/>
         {showCountResult(props.countResult)}
         <div className='bookList'>
             {
                 props.books.map((book) => {
                     return(
                         <BookCard
+                            key = {book.id}
                             img = {checkImg(book)}                            
                             title = {book.volumeInfo.title}
                             category = {book.volumeInfo.categories}

@@ -22,28 +22,30 @@ class Home extends Logics {
     }
 
     render(){
-        console.log('book.state.books' , this.state.books);
+        // console.log('book.state.books' , this.state.books);
         // console.log('book.state.searchField' , this.state.searchField);
 
         return(
         <>
-            <div className="gradient">
-                <Header></Header>
-                <Search 
-                    handleSearch = {this.handleSearch}
-                    handleCategories = {this.handleCategories}
-                    handleSorting = {this.handleSortingBy}
-                    getBookRequest = {this.getBookNewRequest}
-                />
-            </div>
             <Routes>
                 <Route path='/' element={
-                    <BookList 
-                        isLoaded = {this.state.isLoaded}
-                        countResult = {this.state.countResult}
-                        books = {this.state.books}
-                        getBookRequest = {this.getBookRequest}
-                    />
+                    <>
+                        <div className="gradient">
+                            <Header/>
+                            <Search 
+                                handleSearch = {this.handleSearch}
+                                handleCategories = {this.handleCategories}
+                                handleSorting = {this.handleSortingBy}
+                                getBookRequest = {this.getBookNewRequest}
+                            />
+                        </div>
+                        <BookList 
+                            isLoaded = {this.state.isLoaded}
+                            countResult = {this.state.countResult}
+                            books = {this.state.books}
+                            getBookRequest = {this.getBookRequest}
+                        />
+                    </>
                 }/>
                 <Route path='/book' element={<Book />} />
             </Routes> 

@@ -17,14 +17,12 @@ a{
 }
 
 .gradient{
-  /* background: linear-gradient(90deg, #faf0cd, #fab397); */
-  
-  /* background-blend-mode: screen;
-	background:
-		linear-gradient(limegreen, transparent),
-		linear-gradient(90deg, skyblue, transparent),
-		linear-gradient(-90deg, coral, transparent); */
-  
   background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+}
 
+.toFix{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }

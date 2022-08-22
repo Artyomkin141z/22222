@@ -1,0 +1,27 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false
+  },
+  "hosting": {
+    "site": "gilya-book-search",
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "database": {
+    "rules": {
+      ".read": false,
+      ".write": false
+    }
+  }
+}

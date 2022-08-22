@@ -1,6 +1,7 @@
 import { Component } from "react";
 
 import BookFull from "../components/bookFull/bookFull";
+import Header from "../components/head/head";
 
 class Book extends Component {
     constructor(props){
@@ -52,16 +53,19 @@ class Book extends Component {
         console.log('id: ', this.state.id)
 
         return(
-            <BookFull 
-                title = {this.state.title}
-                authors = {this.state.authors}
-                categories = {this.state.categories} 
-                description = {this.state.description}
-                img = {this.state.img}
-                pageCount = {this.state.pageCount}
-                publishedDate = {this.state.publishedDate}
-                publisher = {this.state.publisher}
-            />
+            <>
+                <div className="gradient toFix"><Header /></div>
+                <BookFull 
+                    title = {this.state.title}
+                    authors = {this.state.authors}
+                    categories = {this.state.categories} 
+                    description = {this.state.description}
+                    img = {this.state.img}
+                    pageCount = {this.state.pageCount}
+                    publishedDate = {this.state.publishedDate}
+                    publisher = {this.state.publisher}
+                />
+            </>
         );
     }  
 }
