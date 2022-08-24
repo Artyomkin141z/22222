@@ -1,6 +1,7 @@
 import './bookFull.css';
 
 const BookFull = (props) => {
+    document.title = props.title;
     return(
         <div className='bookFull-parent'>
             <div className='bookFull'>
@@ -8,18 +9,22 @@ const BookFull = (props) => {
                     {props.title}
                 </h1>
                 <div className='bookFull-headContainer'>
-                    <img className='bookFull-img' src={props.img}></img>
+                    <p className='center-img'>
+                        <img className='bookFull-img' src={props.img}></img>
+                    </p>
                     <div className='bookFull-authorsContainer'>                 
-                        <p className="bookFull-authors">
-                            {props.authors}
-                        </p>
-                        <div className='bookFull-pablisherContainer'>
-                            <p className="bookFull-pablisher">
-                                {props.publisher}
+                        <div>
+                            <p className="bookFull-authors">
+                                {props.authors}
                             </p>
-                            <p className="bookFull-date">
-                                {props.publishedDate}
-                            </p>
+                            <div className='bookFull-pablisherContainer'>
+                                <p className="bookFull-pablisher">
+                                    {props.publisher}
+                                </p>
+                                <p className="bookFull-date">
+                                    {props.publishedDate}
+                                </p>
+                            </div>
                         </div>
                         <div className='bookFull-pageCountContainer'>
                             <p className="bookFull-pageCount">

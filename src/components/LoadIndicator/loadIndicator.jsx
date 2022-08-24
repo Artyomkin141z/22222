@@ -1,9 +1,8 @@
-import * as React from 'react';
-// import { ActivityIndicator, MD2Colors } from 'react-native-paper';
+// import React from 'react';
+// import ReactLoading from 'react-loading';
 
-const LoadIndicator = () => (
-    <div></div>
-    // <ActivityIndicator animating={true} color={MD2Colors.red800} />
-);
+// const LoadIndicator = (props) => (
+// 	// <ReactLoading type={"balls"} color={"#c0c0c0"}/>
+// );
 
-export default LoadIndicator;
+// export default LoadIndicator;

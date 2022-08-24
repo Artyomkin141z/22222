@@ -75,3 +75,9 @@ select{
     padding: 0 10px;
     border-radius: 8px;
 }
+
+@media (max-width:370px) {
+    .filter-categories{
+        margin-bottom: 20px;
+    }
+}

@@ -88,3 +88,26 @@
 .bookFull-aboutBook ul li::marker{
     color: #b2b2b2;
 }
+
+@media (max-width: 600px) {
+    .bookFull-headContainer{
+        display: block;
+    }
+    .center-img{
+        text-align: center;
+    }
+    .bookFull-authorsContainer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width:400px) {
+    .bookFull-authorsContainer{
+        display: block;
+    }
+    .bookFull-title{
+        font-size: 25px;
+    }
+}

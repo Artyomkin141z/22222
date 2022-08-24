@@ -26,7 +26,7 @@ function Search (props) {
                 </div>
             </div>
             <div className='filterContainer'>
-                <div className='sortContainer'>
+                <div className='sortContainer filter-categories'>
                     <p>Categories</p>
                     <select
                         onChange={props.handleCategories}

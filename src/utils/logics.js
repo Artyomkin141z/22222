@@ -31,7 +31,7 @@ class Logics extends Component {
 
     getBookNewRequest = (e) => {
         e.preventDefault();
-        
+        this.setState({Loaded: true});
         // console.log(this.state.searchField + this.getCategories(this.state.categories) + this.state.sortingBy + this.state.startIndex);
 
         request
@@ -48,6 +48,7 @@ class Logics extends Component {
                 this.setState({loadItems: this.state.loadItems + 30});
                 this.setState({books: [...data.body.items]});
                 this.setState({countResult: data.body.totalItems});
+                this.setState({Loaded: false});
             })
             .catch((e) => {
                 console.log(e);
